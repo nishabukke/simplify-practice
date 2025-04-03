@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Roboto', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #f5f7fa;
+}
+ 
+.gray-color{
+    color: #939194;
+}
+
+ /* Sidebar */
+ .sidebar {
+     background-color: #fff;
+     padding: 10px 20px;
+     height: 100%;
+     border-radius: 5px;
+ }
+
+ .sidebar-heading{
+     display: flex;
+ }
+
+ .sidebar ul li{
+     margin: 10px 0px;
+ }
+
+ .sidebar ul {
+     list-style: none;
+ }
+
+ .sidebar ul li a {
+     text-decoration: none;
+     border-radius: 5px;
+     border: 1px solid #D9D9D9;
+     padding: 10px;
+     color: #A1A1AA;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+
+ .sidebar ul li a i {
+     margin-right: 10px;
+     color: #A1A1AA;
+ }
+
+ .sidebar ul li a.active {
+     background-color: #0063A9;
+     color: #fff;
+     border: transparent;
+ }
+
+ .sidebar ul li a.active i {
+     color: #fff;
+ }
+
+ .main-content {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    gap: 25px;
+ }
+
+ .header {
+    display: grid;
+        background-color: #fff;
+        padding: 10px 20px;
+        grid-template-columns: 3fr 9fr;
+        gap: 25px;
+ }
+
+ .right-header{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .header h1 {
+     font-size: 24px;
+     color: #064F86;
+ }
+
+ .header .logo{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+ }
+
+ .header .logo i{
+    color: #fff;
+    background-color: #0063A9;
+    padding: 10px;
+    border-radius: 50%;
+ }
+
+ .header .logo img{
+     width: 85px;
+     height: 40px;
+ }
+
+ .header .user {
+     display: flex;
+     align-items: center;
+     gap: 15px;
+ }
+
+ .header .user .fas.fa-bell{
+    padding: 6px;
+    border-radius: 50%;
+    border: 1px solid #1e1e1e;
+    font-size: 14px;
+ }
+
+ .header .user img {
+     width: 30px;
+     height: 30px;
+     border-radius: 50%;
+     border: 1px solid #1e1e1e;
+ }
+
+ /* Dashboard Sections */
+
+ .dashboard h1{
+    margin-top: 30px;
+ }
+
+ .dashboard-inner {
+     display: grid;
+     grid-template-columns: 4.5fr 7.5fr;
+     gap: 20px;
+     padding: 20px 20px 20px 0px;
+ }
+
+ .card {
+     background-color: #fff;
+     border-radius: 8px;
+     border: 1px solid #CFCFCF;
+ }
+
+ .card .card-head {
+     border-bottom: 1px solid #CFCFCF;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 12px;
+ }
+
+ .card-head h3{
+     color: #1e1e1e;
+ }
+
+ .left-status{
+     color: #303030;
+     font-weight: 500;
+ }
+
+ .card .card-head a {
+     font-size: 14px;
+     color: #064F86;
+     text-decoration: underline;
+ }
+
+ /* Activity Status */
+
+ .activity-status .status-inner {
+     display: grid;
+     grid-template-columns: repeat(1,1fr);
+     gap: 15px;
+     padding: 15px;
+     overflow-y: scroll;
+     max-height: 220px;
+ }
+
+ .activity-status .status-item{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .activity-status .status-item .left-status{
+     display: flex;
+     gap: 10px;
+     align-items: baseline;
+ }
+
+ .activity-status .status-item .left-status i{
+     background-color: #ECF7FF;
+     color: #0063A9;
+     padding: 10px;
+     border-radius: 50%;
+ }
+
+ /* Report and Clients */
+ .assignment table, .report table, .clients table {
+     width: 100%;
+     border-collapse: collapse;
+ }
+
+ .table-div{
+     padding: 15px;
+ }
+
+ .assignment table th, .report table th, .clients table th {
+     text-align: left;
+     padding: 10px;
+     font-size: 14px;
+     color: #666;
+     background-color: #ECF7FF;
+ }
+
+ .assignment table td, .report table td, .clients table td {
+     padding: 12px;
+ }
+
+ .assignment table td img, .report table td img, .clients table td img {
+     width: 30px;
+     height: 30px;
+     border-radius: 50%;
+     margin-right: 10px;
+ }
+
+ .project-td-img{
+     display: flex;
+     align-items: center;
+ }
+
+ /* Due Date Information */
+ .due-date .date {
+     display: flex;
+     align-items: center;
+     gap: 15px;
+     padding: 15px;
+ }
+
+ .due-date .date i {
+     background-color: #ECF7FF;
+     color: #007bff;
+     padding: 10px;
+     border-radius: 50%;
+ }
+
+ .due-date .date span{
+     margin-top: 5px;
+     display: block; 
+ }
+
+ /* Meetings and Feedback */
+
+ .meeting-feedback-section{
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     gap: 10px;
+ }
+
+ .meetings img, .feedback img {
+     width: 100px;
+     display: flex;
+     margin: 30px auto;
+ }
+
+
+ /* Responsive Design */
+ @media (max-width: 768px) {
+     .sidebar {
+  width: 200px;
+     }
+
+     .main-content {
+  margin-left: 200px;
+  width: calc(100% - 200px);
+     }
+
+     .dashboard {
+  grid-template-columns: 1fr;
+     }
+ }
+
+ @media (max-width: 576px) {
+     .sidebar {
+  width: 100%;
+  height: auto;
+  position: relative;
+     }
+
+     .main-content {
+  margin-left: 0;
+  width: 100%;
+     }
+ }

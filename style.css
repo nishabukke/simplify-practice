@@ -506,13 +506,22 @@ body{
         margin-top: 0px;
     }
 
-    .project-td-img, td, .due-date .date span, .due-date .date p{
+    .project-td-img, td, .due-date .date span, .due-date .date p, .left-status span, .right-status p{
         font-size: 14px;
     }
 
-    .project-td-img{
+    .assignment table td img, .report table td img, .clients table td img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .left-status i{
+        font-size: 12px;
+    }
+
+    .project-td-img, td{
         flex-direction: column;
-        gap: 5px;
+        gap: 2px;
         text-align: center;
     }
 

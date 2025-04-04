@@ -520,9 +520,14 @@ body{
     }
 
     .project-td-img, td{
-        flex-direction: column;
-        gap: 2px;
         text-align: center;
+    }
+
+    td.project-td-img{
+        display: grid;
+        gap: 5px;
+        grid-template-columns: 10% 90%;
+        align-items: center;
     }
 
     .card-head h3{

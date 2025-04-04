@@ -99,6 +99,7 @@ body{
     background-color: #0063A9;
     padding: 10px;
     border-radius: 50%;
+    cursor: pointer;
  }
 
  .header .logo img{
